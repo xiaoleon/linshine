@@ -33,6 +33,12 @@
         <%- toc(post.content) %>
       </div>
     <% } %>
+    <% if (!index) { %>
+      <div class="artical-toc fold">
+      <a href="#"><%= post.title %></a>
+      <%- toc(post.content, {list_number: post.toc_list_number != false}) %>
+      </div>
+    <% } %>
     <% if (!index || post.tags.length){ %>
       <footer class="article-footer">
         <%- partial('post/tag') %>

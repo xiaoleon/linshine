@@ -236,3 +236,46 @@ a.article-title
       text-decoration: none
   @media mq-large
     display: block
+
+.artical-toc
+    font-size 1em
+    line-height 1.5em
+    background white
+    box-shadow 1px 1px 4px
+    border-radius 2px
+    padding 1.5em
+    position fixed
+    right 50px
+    bottom 100px
+    transition-duration 0.4s
+    max-height 50em
+    overflow auto
+    >a
+      font-size 1.2em
+      line-height 1.5em
+    &.fold
+      width 70px
+      height 70px
+      opacity: .5
+      padding 0
+      border-radius 50%
+      cursor pointer
+      transition-duration 0.4s
+      background-color #009688
+      background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVFhHYxjxgPHfv3/dQFoEwgUKMDJuBOINUC7D////RYAYpIYW4A0D0AH3gRYggwaoJBgA+QoQYeoDkN1MUHsGDAy4AwY+DYyCUTAKBhqAyoHlQFoCwgWXAwuBeAGUCyoHJIAYpIYW4MVoXTAo6oICYJwLQPkgcADIPwBlg6IAJFcA4VEXAM3+AGWOglEwgsFos3y0KB5tlg8wYGAAAFOEoPnqkAbGAAAAAElFTkSuQmCC")
+      background-position center
+      background-repeat no-repeat
+      &:hover
+        box-shadow 2px 2px 8px
+        background-color #00b4a3
+        opacity 1
+      &:active
+        box-shadow inherit
+      *
+        display none
+    ol
+      list-style-type none
+      margin 0
+      padding 0
+      &.toc-child
+        padding-left: 2em

@@ -4,3 +4,8 @@ nav:
 article:
   comments: 'Comments'
   contents: 'Contents'
+Home: 'Home'
+Archives: 'Archives'
+Categories: 'Categories'
+Tags: 'Tags'
+About: 'About'

@@ -4,3 +4,8 @@ nav:
 article:
   comments: '评论'
   contents: '目录'
+Home: '主页'
+Archives: '文章'
+Categories: '分类'
+Tags: '标签'
+About: '关于'

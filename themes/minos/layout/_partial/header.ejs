@@ -5,7 +5,7 @@
       <a id="logo" class="logo<%=(theme.logo_text?' logo-text':'')%>" href="<%- url_for('/') %>"><%=(theme.logo_text?theme.logo_text:'')%></a>
       <nav id="main-nav">
         <% for (var i in theme.menu){ %>
-          <a class="main-nav-link" href="<%- url_for(theme.menu[i].url) %>"><%= theme.menu[i].name %></a>
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a>
         <% } %>
       </nav>
       <nav id="sub-nav">
