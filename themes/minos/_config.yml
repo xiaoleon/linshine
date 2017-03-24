@@ -1,0 +1,21 @@
+# Header
+logo_text: Linshine # Add text logo instead of logo image
+menu:
+  Home: /
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  About: about
+
+# Content
+excerpt_link: 查看更多
+toc: false #  Whether to show the table of contents in articles
+fancybox: true
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.jpg
+
+# Share
+# share_jia: false
+# share_addthis: true
