@@ -27,28 +27,25 @@
     });
 
     // 右下角目录项
-    var toc = document.getElementsByClassName('artical-toc')[0];
-    toc.addEventListener('click', toggleToc);
+    var toc = $('.artical-toc');
+    toc.bind('click', toggleToc);
 
     function toggleToc(e) {
         var action = false;
         if (e.currentTarget == document) {
             action = true;
         } else {
-            if (toc.classList.contains('fold')) {
-                action = true;
-            }
+            action = toc.hasClass('fold');
+            e.stopImmediatePropagation();
         }
         if (action) {
-            if (toc.classList.contains('fold')) {
-                toc.classList.remove('fold');
-                document.addEventListener('click', toggleToc);
+            if (toc.hasClass('fold')) {
+                toc.removeClass('fold');
+                $(document).bind('click', toggleToc);
             } else {
-                toc.classList.add('fold');
-                document.removeEventListener('click', toggleToc);
+                toc.addClass('fold');
+                $(document).unbind('click');
             }
         }
-        if (e.currentTarget == toc)
-            e.stopImmediatePropagation();
     }
 })(jQuery);

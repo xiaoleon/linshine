@@ -33,7 +33,7 @@
         <%- toc(post.content) %>
       </div>
     <% } %>
-    <% if (!index) { %>
+    <% if (!index && false) { %>
       <div class="artical-toc fold">
       <a href="#"><%= post.title %></a>
       <%- toc(post.content, {list_number: post.toc_list_number != false}) %>
@@ -86,3 +86,4 @@
   <!-- 多说公共JS代码 end -->
 </section>
 <% } %>
+<script src="http://www.linshine.me/js/scrollToTop.js"></script>
