@@ -5,7 +5,7 @@
 # Site
 title: Linshine小站
 subtitle: Welcome
-description:
+description: Linshine小站
 author: Leon && Linshine
 language: zh-CN
 timezone:
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: minos
+theme: metro
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
