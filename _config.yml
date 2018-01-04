@@ -6,7 +6,7 @@
 title: Linshine小站
 subtitle: Welcome
 description: Linshine小站
-author: Leon && Linshine
+author: Linshine
 language: zh-CN
 timezone:
 
@@ -69,5 +69,5 @@ theme: metro
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/Linshine03/Linshine03.github.io.git
+  repository: git@github.com:Linshine03/Linshine03.github.io.git
   branch: master

@@ -12,10 +12,10 @@ head:
 Intro:
     name: Linshine
     slogan: "Whatever is worth doing is worth doing well <br/> I'll think of you every step of the way"
-    HeadButton: Linshine
+    HeadButton: Home
 
 Nav:
-    Home_name: 主页
+    Home_name: 主页 
     is_use_categories : false 
     categories_name: 分类
     is_use_archives : false
@@ -34,8 +34,8 @@ Nav:
             use: false
             link:
     pages:
-        图库 :
-            link: "/gallery/"
+        # 图库 :
+        #     link: "/gallery/"
         标签:
             link: "/tags/"
         关于: 
@@ -50,7 +50,7 @@ MainFirst:
     goto_ulr: "/about/"
 
 Gallery :
-    title: Gallery Photos 
+    title: 游 · 记 
     description: 博学，审问，慎思，明辨，笃行
 
 # ---------------------------------------------------------------
